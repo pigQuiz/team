@@ -1,4 +1,5 @@
 # 팀플 시작!
+- git clone 후 git remote add origin https://github.com/superherolanding/team.git
 - git clone 후 VScode에서 파일 -> 폴더 열기 -> team 선택!
 
 ## 규칙
