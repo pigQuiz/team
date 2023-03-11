@@ -1,0 +1,87 @@
+@import url(../donggwan/reset.css);
+
+footer {
+    margin-top: 20px;
+    border-top: 3px solid gray;
+}
+
+footer .innerfooter {
+    padding: 5px;
+    margin: 20px auto 0;
+    width: 80%;
+    height: 500px;
+    border: 1px solid red;
+    background: #000;
+}
+
+/* begin big box  */
+.innerfooter .bigbox1 {
+    border: 1px solid #06e51d;
+    height: 50%;
+    background: aqua;
+}
+.innerfooter .bigbox1 .warp {
+    width: 100px;
+    margin: 50px;
+    /* border: 1px solid #000; */
+    background: yellow;
+    font-weight: 700;
+    float: left;
+}
+.innerfooter .bigbox1 .warp .warp_list {
+    margin-top: 8px;
+    font-size: 14px;
+    color: gray;
+    font-weight: normal;
+    background: green;
+}
+.innerfooter .bigbox1 .warp .warp_a{
+    margin-top: 30px;
+    width: 100px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+    background: yellow;
+
+}
+/* bigbox2  */
+.innerfooter .bigbox2 {
+    height: 50%;
+    background: #fff;
+    border: 1px solid #e916a2;
+}
+.innerfooter .bigbox2 .info {
+    border: 2px solid skyblue;
+}
+.innerfooter .bigbox2 .info .group {
+    padding: 3px;
+    font-size: 10px;
+    border: 1px solid #000;
+    float: left;
+}
+.innerfooter .bigbox2 .info .group img {
+    margin-bottom: 3px;
+}
+.innerfooter .bigbox2 .info .group .group_info {
+    border: 1px solid #000;
+    margin-right: 20px;
+
+    font-size: 13px;
+    float: left;
+}
+.innerfooter .bigbox2 .info .warp_relation {
+    padding: 3px;
+    border: 1px solid #000;
+    margin-left: 20px;
+    float: left;
+    border-radius: 10px;
+}
+.innerfooter .bigbox2 .small {
+    margin-top: 15px;
+    padding: 3px;
+    font-size: 12px;
+    border: 1px solid #000;
+    float: left;
+   
+}
+
