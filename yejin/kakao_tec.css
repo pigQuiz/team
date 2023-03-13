@@ -1,8 +1,9 @@
 @import url('../yejin/common.css');
 
 body {
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background: #000;
 }
 .menu {
     padding: 20px;
@@ -82,7 +83,7 @@ nav .roundbar a{
     border-right: 15px solid lightgray;
     z-index: 0;
     
-    background: #000;
+    background: ;
   }
   
   .message-box {
@@ -93,6 +94,8 @@ nav .roundbar a{
     justify-content: center;
     align-items: center;
     background:lightgray;
+
+    
     bottom: 60px;
     border-radius: 25px;
     padding-left: 1.8em;
@@ -100,13 +103,14 @@ nav .roundbar a{
   }
   
   .message-box p {
-    font-size: 19px;
+    font-size: 16px;
   }
   
   .message-box-next {
     position: absolute;
     right: 0;
     padding-right: 1em;
+    
   } 
   
   .message-box-next p {
@@ -116,12 +120,13 @@ nav .roundbar a{
 
   .content ul .item_card {
     width: 30%;
-    height: 400px;
+    height: 500px;
     border-radius: 20px;
     border: 1px solid #000;
-    /* background: orange; */
+    background: orange;
     
     margin: 10px;
+    margin-left: 20px;
     float: left;
     padding: 10px;
   }
@@ -131,8 +136,9 @@ nav .roundbar a{
   }
 
   .content ul .item_card div > div{
-    background: pink;
+    /* background: pink; */
     height: 15%;
+    width: 200px;
   }
 
 .item_card .small_title{
@@ -154,10 +160,11 @@ nav .roundbar a{
   }
 
   .content ul .item_card .img-box {
+  
     box-sizing: border-box;
     height: 50%;
     
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     overflow: hidden;
     background: gray;
   
@@ -165,6 +172,8 @@ nav .roundbar a{
 .content ul .item_card .img-box img {
       width: 100%;
       height: 100%;
-      margin: 0 auto
+      margin: 0 auto;
+      position: relative;
+      
 
   }
