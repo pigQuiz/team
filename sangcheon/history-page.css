@@ -39,12 +39,14 @@ section.main .main-list {
 }
 
 section.main .main-list ul {
-    background: greenyellow;
+    /* background: greenyellow; */
+    height: 400px;
 }
 
-section.main .main-list li {
-    background: skyblue;
+section.main .main-list .news {
+    /* background: skyblue; */
     width: 31.333%;
+    height: 400px;
     margin-right: 3%;
     float: left;
     border: 1px solid #00000000;
@@ -52,28 +54,60 @@ section.main .main-list li {
     overflow: hidden;
     box-shadow: 4px 0px 20px #00000018;
 }
-section.main .main-list li:last-child{
+section.main .main-list li.news:last-child{
     margin-right: 0;
 }
 
-section.main .main-list li .top {
-    padding: 25px;
-}
-section.main .main-list li h3 {
-    /* padding-left: 25px;
-    padding-bottom: 15px; */
-    background: url('../img/history_text.PNG');
-    width: 100px;
-}
-/* section.main .main-list li h3::after {
-    content: '히스토리';
-    display: block;
-    width: 50%;    
-    background: url('../img/talk_img.png') no-repeat center/cover;
+section.main .main-list li.news .top-header {
+    padding: 25px 25px 0;
+    height: 15%;
     
-} */
-section.main .main-list .news li{
-    float: left;    
+}
+
+section.main .main-list li.news .img-box {
+    width: 30px;
+    height: 30px;
+    /* border: 1px solid #000; */
+    float: left;
+}
+section.main .main-list li.news .img-box img {
+    width: 100%;
+    
+}
+section.main .main-list li.news h3 {
+    /* border: 1px solid #000; */
+    width: 80px;
+    height: 30px;
+    background: url('../img/history_text.PNG') no-repeat center/cover;
+    margin-left: 5px;
+    float: left;
+}
+section.main .main-list li.news .but1 {
+    text-align: center;
+    width: 20px;
+    float:right;
+    /* border: 3px solid #000; */
+    line-height: 30px;
+    color: #888;
+}
+section.main .main-list li.news .top-content {
+    /* border: 1px solid #000; */
+    padding: 15px 25px;
+    height: 35%;
+}
+section.main .main-list li.news .top-content p {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.5;
+}
+section.main .main-list li.news .top-content div {
+    color: #888;
+    font-size: 0.9em;
+}
+
+section.main .main-list li.news .bottom {
+    height: 50%;
 }
 
 section.main .main-list .source1{
@@ -91,7 +125,36 @@ section.main .main-list .source3{
     background: url('https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/history/0e1ca5b1018500001.png?type=thumb&opt=C630x472.fwebp') no-repeat center/cover;
 }
 
+section.main .main-list .page {
+    margin-top: 30px;
+    position: relative;
+}
+
+section.main .main-list .page > div {
+    float: left;
+    font-size: 20px;
+    color: #666;
+}
+section.main .main-list .page .mv {
+    width: 40px;
+    height: 40px;
+    background: #eee;
+    border: 2px solid #eee;
+    border-radius: 50px;    
+    text-align: center;
+    line-height: 30px;    
+    margin-right: 10px;
+}
+
+
+
 section.main .main-list li .news-img {
     width: 20px;
 }
 /* end //section.main */
+
+/* section.history */
+section.history {
+    width: 80%;
+    margin: 0 auto;
+}
