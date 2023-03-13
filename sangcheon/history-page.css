@@ -1,0 +1,97 @@
+/* section.main style */
+
+section.main {
+    width: 80%;
+    margin: 150px auto;
+}
+
+section.main .main-title {
+    position: relative;
+    /* background: red; */
+}
+
+section.main .main-title h2 {
+    /* background: orange; */
+    font-weight: 700;
+    font-size: 40px;
+    padding-left: 60px;
+    /* background: skyblue; */
+    
+}
+section.main .main-title .main-logo {
+    width: 40px;
+    /* background: orange; */
+    margin-right: 20px;
+    
+    top: 3px;    
+}
+section.main .lg {
+    position: absolute;    
+}
+
+section.main .main-title p {
+    /* background: orange; */
+    font-size: 25px;
+    padding: 10px 0;
+}
+section.main .main-list {
+    margin-top: 50px;
+}
+
+section.main .main-list ul {
+    background: greenyellow;
+}
+
+section.main .main-list li {
+    background: skyblue;
+    width: 31.333%;
+    margin-right: 3%;
+    float: left;
+    border: 1px solid #00000000;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 4px 0px 20px #00000018;
+}
+section.main .main-list li:last-child{
+    margin-right: 0;
+}
+
+section.main .main-list li .top {
+    padding: 25px;
+}
+section.main .main-list li h3 {
+    /* padding-left: 25px;
+    padding-bottom: 15px; */
+    background: url('../img/history_text.PNG');
+    width: 100px;
+}
+/* section.main .main-list li h3::after {
+    content: '히스토리';
+    display: block;
+    width: 50%;    
+    background: url('../img/talk_img.png') no-repeat center/cover;
+    
+} */
+section.main .main-list .news li{
+    float: left;    
+}
+
+section.main .main-list .source1{
+    height: 200px;
+    background: url('https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/history/beac9efb018500001.png?type=thumb&opt=C630x472.fwebp') no-repeat center/cover;
+}
+
+section.main .main-list .source2{
+    height: 200px;
+    background: url('https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/history/beba435d018500001.png?type=thumb&opt=C630x472.fwebp') no-repeat center/cover;
+}
+
+section.main .main-list .source3{
+    height: 200px;
+    background: url('https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/history/0e1ca5b1018500001.png?type=thumb&opt=C630x472.fwebp') no-repeat center/cover;
+}
+
+section.main .main-list li .news-img {
+    width: 20px;
+}
+/* end //section.main */
