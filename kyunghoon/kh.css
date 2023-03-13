@@ -1,11 +1,15 @@
 @import url(../common.css);
+.wrapper{
+}
 /* header start */
 .menu {
-    padding: 20px;
+    width: 70%;
+    margin: 0 auto;
 }
 .menu .title {
    /* background: orange; */
-   width: 300px; 
+   width: 300px;
+   max-width: 952px; 
    font-size: 30px;
 }
 .menu .menulist li{
@@ -30,68 +34,101 @@
 
 /* container start */
 .container{
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
 }
-.container nav{
+.container .main{
+    float: left;
+    width: 70%;
+    margin-right: 3%;
+}
+.container .main nav{
     /* background: orange; */
-    width: fit-content;
+    display: block;
+    width: 100%;
     position: relative;
     margin: 70px 0;
     text-align: justify;
 }
-.container nav h1{
+.container .main nav h1{
     font-size: 3em;
     font-weight: 700;
     text-indent: 70px;
     line-height: 60px;
 }
-.container nav img{
+.container .main nav img{
     position: absolute;
 }
 
-.container .main-content{
-    background: orange;
-    width: 700px;
+.container .main .main-content{
+    /* background: rgb(245, 244, 244); */
+    box-shadow: 0 5px 20px #000;
+    width: 70%;
     height: 700px;
     border-radius: 20px;
+    overflow: hidden;
+    
+     
 }
-.container .main-content .ballon{
+.container .main .main-content .ballon{
     /* background: violet; */
     width: 100%;
     padding: 20px;
     height: 80px;
 
 }
-.container .main-content .ballon ul li{
+.container .main .main-content .ballon ul li{
     float: left;
 }
-.container .main-content .ballon ul .yellow img{
+.container .main .main-content .ballon ul .yellow img{
     width: 40px;
     margin-right: 10px;
 }
-.container .main-content .ballon ul li:last-child{
+.container .main .main-content .ballon ul li:last-child{
 float: right;
 }
-.container .main-content a{
+
+.container .main .main-content a{
     display: block;
-    padding: 20px;
     /* background: skyblue; */
 }
-.container .main-content a h2{
+.container .main .main-content a h2{
     width: 85%;
     font-size: 2em;
+    padding: 20px;
     font-weight: 700;
     line-height: 40px;
 }
-.container .main-content a p{
+.container .main .main-content a p{
     /* background: violet; */
-    padding: 20px 0;
+    padding: 0 20px 20px;
     color: rgb(116, 115, 115);
 }
-.container .main-content a .aaa{
+.container .main .main-content a .aaa img{
     width: 100%;
+    border-radius: 3px;
 }
+
+
+
+.sub{
+    float: right;
+    width: 27%;
+}
+.sub > *{
+    display: block;
+}
+.sub .sub-content1{
+    box-shadow: 0 5px 20px #000;
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: 260px;
+}
+.sub .sub-content1 .ballon{
+    
+}
+
 
 
 /* container end */
