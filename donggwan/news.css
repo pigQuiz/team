@@ -257,6 +257,7 @@ section .menu > * {
 section .bigbox {
     /* background: #000; */
     height: 2000px;
+    position: relative;
 }
 .box {
     /* padding: 24px; */
@@ -274,6 +275,12 @@ section .bigbox {
     margin-left: 5%;
     /* margin: 5% 18% 0% 0%; */
     margin-bottom: 5%;
+}
+.box:hover{
+    /* position: absolute; */
+    bottom: 10px;
+    transform: 3s;
+    box-shadow: 4px 10px 30px 6px rgba(0,0,0,08);
 }
 .box:nth-child(3n +1){
     margin-left: 0;
@@ -379,13 +386,14 @@ section .bigbox {
     /* background: red; */
 }
 .group_paging .btn1 {
+    width: 45px;
     display: inline-block;
     background: #eee;
     color: rgba(170, 170, 168, 0.644);
     padding: 10 8px;
     border: none;
     font-size: 40px;
-    border-radius: 50%;
+    border-radius: 50px;
     font-weight: 100;
 }
 .group_paging a {
@@ -408,7 +416,7 @@ section .bigbox {
 
 .group_paging .group_go #target {
     border: 1px solid #eee;
-    border-radius: 13px;
+    border-radius: 50px;
     width: 50px;
     font-size: 30px;
     
@@ -426,7 +434,7 @@ section .bigbox {
     color: #dfdfdf;
     /* font-weight: 700;    */
     font-size: 20px;
-    border-radius: 15px;
+    border-radius: 50px;
     border: none;
 }
 .group_paging .group_go .btn_go:hover{
