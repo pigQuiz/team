@@ -1,7 +1,7 @@
 /* section.main style */
 
 section.main {
-    width: 80%;
+    width: 70%;
     margin: 150px auto;
 }
 
@@ -40,13 +40,13 @@ section.main .main-list {
 
 section.main .main-list ul {
     /* background: greenyellow; */
-    height: 400px;
+    /* height: 400px; */
 }
 
 section.main .main-list .news {
     /* background: skyblue; */
     width: 31.333%;
-    height: 400px;
+    height: 500px;
     margin-right: 3%;
     float: left;
     border: 1px solid #00000000;
@@ -93,13 +93,13 @@ section.main .main-list li.news .but1 {
 section.main .main-list li.news .top-content {
     /* border: 1px solid #000; */
     padding: 15px 25px;
-    height: 35%;
+    height: 25%;
 }
 section.main .main-list li.news .top-content p {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-weight: 700;
-    font-size: 20px;
-    line-height: 1.5;
+    font-size: 25px;
+    line-height: 1.4;
 }
 section.main .main-list li.news .top-content div {
     color: #888;
@@ -107,21 +107,21 @@ section.main .main-list li.news .top-content div {
 }
 
 section.main .main-list li.news .bottom {
-    height: 50%;
+    height: 60%;
 }
 
 section.main .main-list .source1{
-    height: 200px;
+    height: 100%;
     background: url('https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/history/beac9efb018500001.png?type=thumb&opt=C630x472.fwebp') no-repeat center/cover;
 }
 
 section.main .main-list .source2{
-    height: 200px;
+    height: 100%;
     background: url('https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/history/beba435d018500001.png?type=thumb&opt=C630x472.fwebp') no-repeat center/cover;
 }
 
 section.main .main-list .source3{
-    height: 200px;
+    height: 100%;
     background: url('https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/history/0e1ca5b1018500001.png?type=thumb&opt=C630x472.fwebp') no-repeat center/cover;
 }
 
@@ -146,15 +146,122 @@ section.main .main-list .page .mv {
     margin-right: 10px;
 }
 
-
-
-section.main .main-list li .news-img {
+/* section.main .main-list li .news-img {
     width: 20px;
-}
+} */
 /* end //section.main */
 
 /* section.history */
 section.history {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
+    position: relative;
+}
+
+section.history .his-head h2 {
+    float:left;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+section.history .his-head #btn-years {
+    float: right;
+    background: #ddd;
+    border: 2px solid #ddd;    
+    border-radius: 30px;
+
+    display: block;
+    padding: 10px 20px;
+}
+
+section.history ul {
+    width: 100%;
+    /* height: 100vh; */
+    margin-top: 30px;
+    float: none;
+    position: relative;
+    /* background: orange; */
+    margin-bottom: 20px;
+}
+
+section.history ul li {
+    height: 300px;
+    border-left: 4px solid #ddd;
+    margin: 2px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+section.history ul li:last-child {
+    border: 0px;
+}
+
+
+section.history ul li .thum {    
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+section.history ul li .thum1 {  
+    background: url('https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/history/beba435d018500001.png?type=thumb&opt=C480x360.fwebp') no-repeat center/cover;
+}
+section.history ul li .thum2 {
+    background: url('https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/history/beac9efb018500001.png?type=thumb&opt=C480x360.fwebp') no-repeat center/cover;
+}
+section.history ul li .thum3 {
+    background: url('https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/history/0e1ca5b1018500001.png?type=thumb&opt=C480x360.fwebp') no-repeat center/cover;
+}
+section.history ul li .thum4 {
+    background: url('https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/history/0e0deb07018500001.png?type=thumb&opt=C480x360.fwebp') no-repeat center/cover;
+}
+section.history ul li .thum5 {
+    background: url('https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/history/3247712c017e00001.jpg?type=thumb&opt=C480x360.fwebp') no-repeat center/cover;
+}
+
+section.history ul li .contents {
+    width: 95%;
+    /* background: skyblue; */
+    /* position: absolute;
+    top: 0;
+    right: 0; */
+    display: flex;    
+}
+section.history ul li .contents .text {    
+    padding: 0 40px; 
+    font-size: 30px;
+    font-weight: 700;
+}
+
+section.history ul li .contents .text p {
+    font-size: 1.5em;
+    margin-top: 30px;
+}
+section.history ul li .contents .text p span {
+    display: block;
+    color: #ccc;
+    font-size: 0.6em;
+    margin-top: 50px;
+    font-weight: normal;
+}
+
+section.history ul li .contents .dot {
+    width: 10px;
+    height: 10px;
+    border: 8px solid #000;
+    border-radius: 50%;
+    position: absolute;
+    left: -4px;
+}
+
+
+section.history .more {
+    font-size: 25px;
+    width: fit-content;
+    padding: 20px 50px;
+    border: 2px solid #ddd;
+    border-radius: 50px;
+    background: #ddd;
+    margin: 0 auto; 
 }
