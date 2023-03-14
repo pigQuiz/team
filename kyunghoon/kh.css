@@ -1,11 +1,23 @@
 @import url(../common.css);
+
+.sticky{
+    /* background-color: yellow; */
+    position:sticky;
+    top:40px;
+}
+
+.wrapper{
+    height: 7000px;
+}
 /* header start */
 .menu {
-    padding: 20px;
+    width: 70%;
+    margin: 0 auto;
 }
 .menu .title {
    /* background: orange; */
-   width: 300px; 
+   width: 300px;
+   max-width: 952px; 
    font-size: 30px;
 }
 .menu .menulist li{
@@ -28,20 +40,29 @@
 }
 /* header end */
 
+
+
 /* container start */
+
 .container{
-    width: 80%;
+    width: 75%;
     margin: 0 auto;
+}
+.container .main{
+    width: 100%;
+    height: 2015px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 .container nav{
     /* background: orange; */
-    width: fit-content;
-    position: relative;
-    margin: 70px 0;
-    text-align: justify;
+    display: block;
+    width: 100%;
+    margin: 130px 0;
 }
 .container nav h1{
-    font-size: 3em;
+    font-size: 60px;
     font-weight: 700;
     text-indent: 70px;
     line-height: 60px;
@@ -50,48 +71,393 @@
     position: absolute;
 }
 
-.container .main-content{
-    background: orange;
-    width: 700px;
-    height: 700px;
+.container .main .main-content
+, .container .ma .subcon{
+    width: 45%;
+    box-sizing: border-box;
+    box-shadow: 0 5px 20px #000;
     border-radius: 20px;
+    overflow: hidden;
+    height: 1200px;
+
 }
-.container .main-content .ballon{
+.container .main .main-content:hover{
+    transform: translateY(-10px);
+}
+.container .main .main-content .ballon
+, .container .ma .subcon .ballon{
     /* background: violet; */
     width: 100%;
     padding: 20px;
     height: 80px;
 
 }
-.container .main-content .ballon ul li{
+.container .main .main-content .ballon ul li
+, .container .ma .subcon .ballon ul li{
     float: left;
 }
-.container .main-content .ballon ul .yellow img{
-    width: 40px;
+.container .main .main-content .ballon ul .yellow img
+, .container .ma .subcon .ballon ul .yellow img{
+    width: 60px;
     margin-right: 10px;
 }
-.container .main-content .ballon ul li:last-child{
-float: right;
+.container .main .main-content .ballon ul .tree img
+, .container .ma .subcon .ballon ul .tree img{
+    height: 60px;
 }
-.container .main-content a{
+.container .main .main-content .ballon ul li:last-child
+, .container .ma .subcon .ballon ul li:last-child{
+float: right;
+font-size: 30px;
+}
+
+.container .main .main-content a
+, .container .ma .subcon a{
     display: block;
-    padding: 20px;
     /* background: skyblue; */
 }
-.container .main-content a h2{
+.container .main .main-content a h2
+, .container .ma .subcon a h2{
     width: 85%;
-    font-size: 2em;
+    font-size: 40px;
+    padding: 20px;
     font-weight: 700;
     line-height: 40px;
 }
-.container .main-content a p{
+.container .main .main-content a p
+, .container .ma .subcon a p{
     /* background: violet; */
-    padding: 20px 0;
+    font-size: 20px;
+    padding: 0 20px 20px;
+    margin: 40px 0;
     color: rgb(116, 115, 115);
 }
-.container .main-content a .aaa{
+.container .main .main-content a .aaa
+, .container .ma .subcon a .aaa{
+    height: 900px;
+}
+.container .main .main-content a .aaa img
+, .container .ma .subcon a .aaa img{
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+}
+
+
+
+.container .main .sub{
+    width: 20%;
+}
+.container .main .sub > *:hover{
+    transform: translateY(-10px);
+}
+.container .main .sub .sub-content1
+, .container .main .sub .sub-content3
+, .container .main .subsub .sub-content4
+, .container .main .subsub .sub-content5
+, .container .ma .macon .ma-con2
+, .container .ma .macon .ma-con3{
+    /* background: orange; */
+    overflow: hidden;
+    height: 560px;
+    box-shadow: 0 5px 20px #000;
+    border-radius: 20px;
+}
+.container .main .sub .sub-content1 .ballon
+, .container .main .sub .sub-content3 .ballon
+, .container .main .subsub .sub-content4 .ballon
+, .container .main .subsub .sub-content5 .ballon
+, .container .ma .macon .ma-con2 .ballon
+, .container .ma .macon .ma-con3 .ballon{
+    /* background: violet; */
+    width: 100%;
+    height: 80px;
+}
+.container .main .sub .sub-content1 .ballon ul
+, .container .main .sub .sub-content3 .ballon ul
+, .container .main .subsub .sub-content4 .ballon ul
+, .container .main .subsub .sub-content5 .ballon ul
+, .container .ma .macon .ma-con2 .ballon ul
+, .container .ma .macon .ma-con3 .ballon ul{
+    padding: 20px;
+}
+.container .main .sub .sub-content1 .ballon ul li
+, .container .main .sub .sub-content3 .ballon ul li
+, .container .main .subsub .sub-content4 .ballon ul li
+, .container .main .subsub .sub-content5 .ballon ul li
+, .container .ma .macon .ma-con2 .ballon ul li
+, .container .ma .macon .ma-con3 .ballon ul li{
+float: left;
+}
+.container .main .sub .sub-content1 .ballon ul li:last-child
+, .container .main .sub .sub-content3 .ballon ul li:last-child
+, .container .main .subsub .sub-content4 .ballon ul li:last-child
+, .container .main .subsub .sub-content5 .ballon ul li:last-child
+, .container .ma .macon .ma-con2 .ballon ul li:last-child
+, .container .ma .macon .ma-con3 .ballon ul li:last-child{
+    font-size: 30px;
+float: right;
+}
+.container .main .sub .sub-content1 .ballon ul .yellow
+, .container .main .sub .sub-content3 .ballon ul .yellow
+, .container .main .subsub .sub-content4 .ballon ul .yellow
+, .container .main .subsub .sub-content5 .ballon ul .yellow
+, .container .ma .macon .ma-con2 .ballon ul .yellow
+, .container .ma .macon .ma-con3 .ballon ul .yellow{
+    width: 60px;
+    margin-right: 20px;
+}
+.container .main .sub .sub-content1 .ballon ul .tree img
+, .container .main .sub .sub-content3 .ballon ul .tree img
+, .container .main .subsub .sub-content4 .ballon ul .tree img
+, .container .main .subsub .sub-content5 .ballon ul .tree img
+, .container .ma .macon .ma-con2 .ballon ul .tree img
+, .container .ma .macon .ma-con3 .ballon ul .tree img{
+    height: 60px;
+}
+
+.container .main .sub .sub-content1 a
+, .container .main .sub .sub-content3 a
+, .container .main .subsub .sub-content4 a
+, .container .main .subsub .sub-content5 a
+, .container .ma .macon .ma-con2 a
+, .container .ma .macon .ma-con3 a{
+    display: block;
+}
+.container .main .sub .sub-content1 a h2
+, .container .main .sub .sub-content3 a h2
+, .container .main .subsub .sub-content4 a h2
+, .container .main .subsub .sub-content5 a h2
+, .container .ma .macon .ma-con2 a h2
+, .container .ma .macon .ma-con3 a h2{
+width: 100%;
+font-size: 21px;
+padding: 20px;
+font-weight: 700;
+line-height: 40px;
+}
+.container .main .sub .sub-content1 a p
+, .container .main .sub .sub-content3 a p
+, .container .main .subsub .sub-content4 a p
+, .container .main .subsub .sub-content5 a p
+, .container .ma .macon .ma-con2 a p
+, .container .ma .macon .ma-con3 a p{
+    padding: 0 20px 20px;
+    font-size: 18px;
+    color: rgb(116, 115, 115);
+}
+.container .main .sub .sub-content1 a .aaa{
+    height: 400px;
+}
+.container .main .sub .sub-content1 a .aaa img{
     width: 100%;
 }
+.container .main .sub .sub-content3 a .aaa img{
+    width: 100%;
+}
+
+
+
+.container .main .sub .sub-content2
+, .container .main .subsub .sub-content6
+, .container .main .subsub .sub-content7{
+    /* background: orange; */
+    width: 100%;
+    height: 270px;
+    margin: 30% 0;
+    box-shadow: 0 5px 20px #000;
+    border-radius: 20px;
+    padding: 20px;
+}
+.container .main .sub .sub-content2 .ballon{
+    width: 100%;
+}
+.container .main .sub .sub-content2 .ballon img{
+    height: 70px;
+}
+.container .main .sub .sub-content2 h2{
+    /* background: orange; */
+    font-size: 70px;
+    font-weight: 700;
+
+    margin: 20px 0;
+}
+.container .main .sub .sub-content2 p{
+    font-size: 21px;
+    color: rgb(116, 115, 115);
+
+    margin-top: 50px;
+}
+
+
+
+
+.container .main .subsub{
+    width: 20%;
+}
+.container .main .subsub > *:hover{
+    transform: translateY(-10px);
+}
+.container .main .subsub .sub-content5{
+    margin-top: 30%;
+}
+.container .main .subsub .sub-content4 a .aaa img{
+    width: 100%;
+    height: 290px;
+}
+.container .main .subsub .sub-content5 a .aaa img{
+    width: 100%;
+    height: 290px;
+}
+
+.container .main .subsub .sub-content6 .promise img
+, .container .main .subsub .sub-content7 .promise img
+, .container .ma .macon .ma-con1 .promise img
+, .container .ma .macon .ma-con4 .promise img{
+    height: 60px;
+}
+.container .main .subsub .sub-content6 h2
+, .container .main .subsub .sub-content7 h2
+, .container .ma .macon .ma-con1 h2
+, .container .ma .macon .ma-con4 h2{
+    font-weight: 600;
+    font-size: 25px;
+    margin: 40px 0;
+
+}
+.container .main .subsub .sub-content6 p
+, .container .main .subsub .sub-content7 p
+, .container .ma .macon .ma-con1 p
+, .container .ma .macon .ma-con4 p{
+    font-size: 21px;
+    color: rgb(116, 115, 115);
+
+    margin-top: 60px;
+}
+/* main end */
+
+
+/* cult start */
+.container .cult{
+    box-shadow: 0 5px 20px #000;
+    border-radius: 20px;
+    margin: 150px auto;
+}
+.container .cult p{
+    font-size: 70px;
+    font-weight: 600;
+    text-align: center;
+
+    padding: 70px;
+}
+.container .cult a{
+    display: block;
+    width: 300px;
+    height: 80px;
+    margin: 0 auto;
+    border-radius: 70px;
+
+    background: #000;
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 80px;
+}
+.container .cult .rion{
+    padding: 150px;
+}
+.container .cult .rion img{
+    width: 100%;
+}
+/* cult end */
+
+
+/* subs start */
+.container .subs{
+    box-shadow: 0 5px 20px #000;
+    border-radius: 20px;
+    margin: 150px auto;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container .subs p{
+    font-weight: 600;
+    font-size: 50px;
+}
+.container .subs a{
+    width: 500px;
+}
+.container .subs a img{
+    width: 100%;
+}
+
+
+
+/* subs end */
+
+/* ma start */
+.container .ma{
+    /* background: violet; */
+    width: 100%;
+    height: 1500px;
+    display: flex;
+    justify-content: space-between;
+}
+.container .ma .macon{
+    width: 48%;
+    /* background: skyblue; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+}
+.container .ma .macon > *:hover{
+    transform: translateY(-10px);
+}
+.container .ma .macon .ma-con1
+, .container .ma .macon .ma-con4{
+    width: 48%;
+    height: 270px;
+    box-shadow: 0 5px 20px #000;
+    border-radius: 20px;
+    padding: 20px;
+}
+.container .ma .macon .ma-con2
+, .container .ma .macon .ma-con3{
+    width: 48%;
+    height: 560px;
+}
+.container .ma .macon .ma-con3{
+    position: absolute;
+    top: 21%;
+    border: 1px solid #000;
+}
+.container .ma .macon .ma-con4{
+    border: 1px solid #000;
+    position: absolute;
+    top: 40%;
+    left: 52%;
+}
+
+.container .ma .macon .ma-con2 a .aaa img
+, .container .ma .macon .ma-con3 a .aaa img{
+    width: 100%;
+    height: 300px;
+}
+
+
+.container .ma .subcon{
+    width: 48%;
+}
+.container .ma .subcon:hover{
+    transform: translateY(-10px);
+}
+
+/* ma end */
+
 
 
 /* container end */
