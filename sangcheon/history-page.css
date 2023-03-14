@@ -57,6 +57,7 @@ section.main .main-list .news {
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 4px 0px 20px #00000018;
+    cursor: pointer;
 }
 section.main .main-list li.news:last-child{
     margin-right: 0;
@@ -194,6 +195,7 @@ section.history ul li {
     margin: 2px;
     display: flex;
     flex-direction: row-reverse;
+    
 }
 
 section.history ul li:last-child {
@@ -226,16 +228,15 @@ section.history ul li .thum5 {
 
 section.history ul li .contents {
     width: 95%;
+    height: 200px;
     /* background: skyblue; */
-    /* position: absolute;
-    top: 0;
-    right: 0; */
+    cursor: pointer;
     display: flex;    
 }
 section.history ul li .contents .text {    
     width: 90%;
     padding: 0 40px; 
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 700;
 }
 
@@ -245,8 +246,8 @@ section.history ul li .contents .text p {
 }
 section.history ul li .contents .text p span {
     display: block;
-    color: #ccc;
-    font-size: 0.6em;
+    color: #999;
+    font-size: 0.5em;
     margin-top: 50px;
     font-weight: normal;
 }
@@ -269,9 +270,10 @@ section.history .more {
     border-radius: 50px;
     background: #ddd;
     margin: 0 auto; 
+    cursor: pointer;
 }
 
-@media screen and (max-width:1024px) {
+/* @media screen and (max-width:1024px) {
     section.main {
         width: 80%;
     }
@@ -285,4 +287,4 @@ section.history .more {
         margin-top: 0;
         
     }
-}
+} */
