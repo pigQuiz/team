@@ -26,6 +26,7 @@ body {
     display: inline-block;
     font-weight: 700;
 }
+
 .menu .icon {
     float: right;
     /* background: blue; */
@@ -140,7 +141,7 @@ nav .roundbar a{
     float: left;
     /* padding: 10px; */
 
-    box-shadow: 3px 3px 3px lightgray;
+    box-shadow: 4px 4px 4px lightgray;
     position: relative; 
     overflow: hidden;
   }
@@ -170,6 +171,14 @@ nav .roundbar a{
     padding-left: 25px;
     /* background: skyblue; */
     height: 25%;
+    
+  }
+
+  .item_card:hover {
+    box-shadow: 6px 6px 6px gray;
+    position: relative;
+    bottom: 8px;
+    
     
   }
 
