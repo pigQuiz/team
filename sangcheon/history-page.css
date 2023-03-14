@@ -1,8 +1,12 @@
+@import url('headfoot.css');
+
+
+
 /* section.main style */
 
 section.main {
     width: 70%;
-    margin: 150px auto;
+    margin: 100px auto 150px;
 }
 
 section.main .main-title {
@@ -229,6 +233,7 @@ section.history ul li .contents {
     display: flex;    
 }
 section.history ul li .contents .text {    
+    width: 90%;
     padding: 0 40px; 
     font-size: 30px;
     font-weight: 700;
@@ -264,4 +269,20 @@ section.history .more {
     border-radius: 50px;
     background: #ddd;
     margin: 0 auto; 
+}
+
+@media screen and (max-width:1024px) {
+    section.main {
+        width: 80%;
+    }
+    section.main .main-list li.news .top-header {
+        padding: 20px 20px 0;
+        height: 12%;
+    }
+
+    section.main .main-list li.news .top-content {
+        padding: 20px;
+        margin-top: 0;
+        
+    }
 }
