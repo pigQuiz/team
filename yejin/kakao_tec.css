@@ -1,65 +1,12 @@
+@import url('headfoot.css');
 @import url('../yejin/common.css');
 
 body {
-    margin-left: 15%;
-    /* background: #000; */
-    margin-bottom: 30%;
+  width: 70%;
+  margin: 100px auto 150px;
     height: 3000px;
 }
-/* header */
-.menu {
-    padding: 20px;
-    /* position: fixed; */
-    /* background: orange; */
-}
-.menu .title {
-   /* background: orange; */
-   width: 300px; 
-   font-size: 30px;
-}
-.menu .menulist li{
-    position: relative;
-    left: 300px;
-    bottom: 20px;
-    padding-left: 20px;
-    /* background: red; */
-    display: inline-block;
-    font-weight: 700;
-}
-.menu .menulist li:nth-child(3) {
-  position: relative;
-  top: 20px;
-}
-.menu .menulist .hover-on {
-  background: white;
-  line-height: 30px;
-  width: 160px;
-  /* padding-left: 40px; */
-  padding: 15px 15px 15px 25px;
-  color: white;
-  position: relative;
-  top: 20px;
-  right: 15px;
-  border-radius: 30px;
-  display: block;
-}
-.menu .menulist .hover-on:hover {
-  display:block;
-  background: #000;
-  color: white;
-}
 
-.menu .icon {
-    float: right;
-    /* background: blue; */
-}
-.menu .icon div {
-    margin: 10px;
-    bottom: 60px;
-    float: left;
-    position: relative;
-}
-/* header end */
 
 /* nav */
 .gear {
