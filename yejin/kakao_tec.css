@@ -21,10 +21,32 @@ body {
     position: relative;
     left: 300px;
     bottom: 20px;
-    padding-left: 15px;
+    padding-left: 20px;
     /* background: red; */
     display: inline-block;
     font-weight: 700;
+}
+.menu .menulist li:nth-child(3) {
+  position: relative;
+  top: 20px;
+}
+.menu .menulist .hover-on {
+  background: white;
+  line-height: 30px;
+  width: 160px;
+  /* padding-left: 40px; */
+  padding: 15px 15px 15px 25px;
+  color: white;
+  position: relative;
+  top: 20px;
+  right: 15px;
+  border-radius: 30px;
+  display: block;
+}
+.menu .menulist .hover-on:hover {
+  display:block;
+  background: #000;
+  color: white;
 }
 
 .menu .icon {
@@ -225,10 +247,17 @@ nav .roundbar a{
     margin-left: 30px;
     margin-right: 30px;
   }
+  .endbox ul li:first-child {
+    font-weight: 600;
+  }
+
   .endbox ul {
     /* background:orange; */
     position: relative;
     top: 20px;
+  }
+  .endbox ul li:hover {
+    text-decoration: underline;
   }
 .endbox button {
     /* background: orange; */
