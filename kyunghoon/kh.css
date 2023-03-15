@@ -14,22 +14,30 @@
     width: 70%;
     margin: 0 auto;
     padding: 20px 0;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background: violet; */
 }
 .menu .title {
    /* background: orange; */
-   width: 300px; 
+   /* width: 300px;  */
    font-size: 30px;
    /* border: 1px solid #000; */
 }
-.mene ul {
+.menu ul {
+    /* background: red; */
+    /* position: relative; */
 
 }
 .menu .menulist li{
     /* border: 1px solid #000; */
+    /* background: orange; */
     margin-left: 20px;
-    position: relative;
-    left: 300px;
-    bottom: 20px;
+    /* position: relative; */
+    /* left: 300px;
+    bottom: 20px; */
     padding-left: 15px;
     /* background: red; */
     display: inline-block;
@@ -43,18 +51,20 @@
     color: #000;
 }
 .menu .menulist li:first-child {
-    margin-left: 250px;
+    /* margin-left: 250px; */
 }
 
 .menu .icon {
-    float: right;
+    /* float: right; */
     /* background: blue; */
+    display: flex;
+    justify-content: flex-start;
 }
 .menu .icon div {
     margin: 10px;
-    bottom: 60px;
-    float: left;
-    position: relative;
+    /* bottom: 60px; */
+    /* float: left;
+    position: relative; */
 }
 /* header end */
 
